@@ -1,0 +1,226 @@
+header .nav-link {
+  position: relative;
+  margin: 0 10px;
+}
+
+header .nav-item .nav-link.active {
+  color: #35a22c !important;
+}
+
+header .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #35a22c;
+  transition: all 0.5s;
+}
+
+header .nav-link:hover::before {
+  width: 100%;
+}
+
+header .nav-link:hover {
+  color: #35a22c !important;
+}
+
+header .active::before {
+  width: 100%;
+}
+
+.carousel .carousel-caption img {
+  width: 150px;
+  height: 150px;
+}
+
+.carousel .carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 100%;
+  height: 100%; */
+  background: rgba(39, 43, 54, 0.5);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-bottom: 70px;
+}
+
+.project {
+  padding: 100px 0;
+}
+
+.project .project_content .nav-link {
+  color: black;
+  border: 1px solid black;
+}
+
+.project .project_content .nav-link.active {
+  background: #35a22c;
+  border-color: #35a22c;
+  color: white;
+}
+
+.project .project_item {
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.project .project_item img {
+  border-radius: 20px 20px 0 0;
+}
+
+.project .project_item .project_text {
+  border: 1px solid transparent;
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+  transition: all 0.5s;
+}
+
+.project .project_item:hover .project_text {
+  border-color: #35a22c;
+}
+
+.project .project_item:hover h3 {
+  color: #35a22c;
+}
+
+.available {
+  background: url(../image/3.jpg) no-repeat center / cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+  position: relative;
+}
+
+.available::before {
+  content: "";
+  background: rgba(7, 10, 12, 0.72);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.available .available_item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  transition: all 0.5s;
+}
+
+.available .available_item i {
+  color: #35a22c;
+}
+
+.available .available_item:hover {
+  background-color: black;
+  border-color: white;
+}
+
+.award {
+  position: relative;
+  color: #585858;
+  padding: 70px 0;
+}
+
+.award_bg {
+  background: url(../img/memphis_3.png) no-repeat bottom left / 50% auto;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.award_left {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+  padding: 45px;
+}
+
+.award_right {
+  padding: 45px 0;
+}
+
+footer {
+  background: #222;
+}
+
+footer a {
+  color: #aaa;
+}
+
+footer p {
+  color: #aaa;
+  margin: 0;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #35a22c;
+}
+
+.footer_main i {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 50%;
+  border: 1px solid #454545;
+  transition: all 0.5s;
+}
+
+.footer_main a {
+  margin-right: 10px;
+}
+
+.footer_main a:last-child {
+  margin-right: 0;
+}
+
+.footer_copies {
+  border-top: 1px solid #454545;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.footer_copies a {
+  text-decoration: none;
+}
+
+.footer_main i:hover {
+  border-color: #35a22c;
+}
+
+/* @media screen and (max-width: 1200px) {
+  .carousel h5 {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel h5 {
+    color: orange;
+  }
+} */
+
+/* @media screen and (min-width: 576px) {
+  .carousel h5 {
+    color: red;
+  }
+} */
